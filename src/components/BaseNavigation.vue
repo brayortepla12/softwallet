@@ -69,6 +69,7 @@
               >
                 <span class="absolute -inset-1.5"></span>
                 <span class="sr-only">Open user menu</span>
+
                 <img
                   class="w-8 h-8 rounded-full"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -85,16 +86,17 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a
-                href="#"
+              <router-link
+                to="ingresos"
                 class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md"
                 aria-current="page"
-                >Ingresos</a
+                >Ingresos</router-link
               >
-              <a
-                href="#"
+
+              <router-link
                 class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                >Gastos</a
+                to="gastos"
+                >Gastos</router-link
               >
             </div>
           </div>
@@ -117,7 +119,6 @@
           class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
           >Gastos</a
         >
-      
       </div>
     </div>
   </nav>
